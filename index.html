@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Solar Energy Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Рішення для сонячної енергії</h1>
+        <p>Чиста енергія для вашого дому та бізнесу</p>
+        <button id="infoBtn">
+          <a href="" target=_blank class="btn">Дізнайтеся більше</a>
+          
+        </button>
+    </header>
+
+    <section class="services reveal">
+        <h2>Наші послуги</h2>
+        <div class="cards">
+            
+
+<div class="card">
+<i class="fas fa-solar-panel service-icon"></i>
+  
+<h3>Встановлення сонячних панелей</h3>
+<p>
+Професійний монтаж сонячних панелей "під ключ".
+Підбір обладнання, проєктування та підключення до мережі
+з гарантією якості та безпеки.
+</p>
+</div>
+            <div class="card">
+                <i class="fas fa-bolt fa-3x"></i>
+                <h3>Акумуляторні накопичувачі і інвертори</h3>
+                <p>Надійні рішення для зберігання енергії для живлення вашого будинку вдень і вночі.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-tools fa-3x"></i>
+                <h3>Технічне обслуговування та підтримка
+</h3>
+                <p>Постійне технічне обслуговування та моніторинг для забезпечення ефективності системи.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about reveal">
+        <h2>Why Choose Solar?</h2>
+        <p>Solar energy reduces your electricity bills and carbon footprint while increasing energy independence. Our team provides custom solutions tailored to your property.</p>
+    </section>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f9f9;
+    text-align: center;
+}
+
+header {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffb703, #219ebc);
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #023047;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #03506f;
+}
+.btn{
+  color: white;
+  text-decoration: none;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card i {
+    color: #0a2540;
+    margin-bottom: 15px;
+}
+.service-icon {
+  font-size: 48px;
+  color: #f7b500;
+  margin-bottom: 20px;
+}
+
+/* Info Section */
+.info {
+    padding: 50px 20px;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Scroll reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
